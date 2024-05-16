@@ -44,6 +44,12 @@ body{
 }
 .footer{
     text-align: center;
+    color: whitesmoke;
+}
+.footer:hover{
+    color: blue;
+    font-size: 32px;
+    font-weight: 800;
 }
 
 .content2{
@@ -71,4 +77,83 @@ body{
 .content2_body p{
     font-size: 14px;
     margin: 12px;
+}
+
+.content3_body h2{
+    text-align: center;
+    font-size: 32px;
+    color: rgb(35, 209, 252);
+    font-weight: 800;
+}
+
+.content3_body ul{
+    margin: 12px;
+    padding: 12px;
+}
+
+.content3_body ul li:first-child{
+    list-style-type: none;
+    font-size: 22px;
+    color: red;
+    font-weight: 900;
+}
+
+.content4{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.content4 img{
+    width: 650px;
+    border-radius: 10px;
+    margin-right: 12px;
+}
+
+.content4_body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.content4_body h2{
+    color: rgb(0, 140, 255);
+    font-size: 32px;
+}
+
+.content4_body p{
+    margin: 12px;
+    padding: 10px;
+}
+
+.content5{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+   
+}
+
+.content5 img{
+    width: 650px;
+    border-radius: 10px;
+    margin-right: 12px;
+    padding: 15px;
+}
+
+.content5_body{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.content5_body h2{
+    font-size: 32px;
+    color: red;
+}
+
+.content5_body p{
+    margin: 10px;
+    padding: 12px;
 }
