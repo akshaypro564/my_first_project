@@ -1,50 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap');
 
-*{
+* {
     box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-body{
+body {
     background-color: beige;
     font-family: "Poppins", sans-serif;
 }
 
-.header{
+.header {
     text-align: center;
     margin-top: 10px;
     font-size: 22px;
     color: blue;
 }
-.content{
+
+.content {
     margin: 10px;
     display: flex;
     justify-content: space-around;
     align-items: center;
     gap: 52px;
 }
-.content img{
+
+.content img {
     width: 650px;
     border-radius: 12px;
     margin: 32px;
 }
 
-.text{
+.text {
     padding-left: 22px;
 }
-.text h2{
+
+.text h2 {
     font-size: 32px;
     color: red;
     padding-left: 32px;
 }
-.text p{
+
+.text p {
     font-size: 14px;
     margin: 12px;
 }
 
-
-.content2{
+.content2 {
     margin: 10px;
     display: flex;
     justify-content: space-around;
@@ -52,114 +55,195 @@ body{
     gap: 52px;
 }
 
-.content2 video{
+.content2 video {
     width: 600px;
 }
 
-.content2_body{
+.content2_body {
     margin: 10px;
     padding: 12px;
 }
 
-.content2_body h2{
+.content2_body h2 {
     color: red;
     font-size: 32px;
 }
 
-.content2_body p{
+.content2_body p {
     font-size: 14px;
     margin: 12px;
 }
 
-.content3_body h2{
+.content3_body h2 {
     text-align: center;
     font-size: 32px;
     color: rgb(35, 209, 252);
     font-weight: 800;
 }
 
-.content3_body ul{
+.content3_body ul {
     margin: 12px;
     padding: 12px;
 }
 
-.content3_body ul li:first-child{
+.content3_body ul li:first-child {
     list-style-type: none;
     font-size: 22px;
     color: red;
     font-weight: 900;
 }
 
-.content4{
+.content4 {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-.content4 img{
+.content4 img {
     width: 650px;
     border-radius: 10px;
     margin-right: 12px;
 }
 
-.content4_body{
+.content4_body {
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.content4_body h2{
+.content4_body h2 {
     color: rgb(0, 140, 255);
     font-size: 32px;
 }
 
-.content4_body p{
+.content4_body p {
     margin: 12px;
     padding: 10px;
 }
 
-.content5{
+.content5 {
     display: flex;
     align-items: center;
     justify-content: space-between;
-   
 }
 
-.content5 img{
+.content5 img {
     width: 650px;
     border-radius: 10px;
     margin-right: 12px;
     padding: 15px;
 }
 
-.content5_body{
+.content5_body {
     padding: 12px;
     display: flex;
     align-items: center;
     flex-direction: column;
-    justify-content: space-between; 
+    justify-content: space-between;
 }
 
-.content5_body h2{
+.content5_body h2 {
     font-size: 32px;
     color: red;
 }
 
-.content5_body p{
+.content5_body p {
     margin: 10px;
     padding: 12px;
 }
 
-.footer{
-    /* background-color: red; */
+.footer {
     font-size: 12px;
     color: brown;
     text-align: center;
     margin: 12px;
     padding: 12px;
 }
-.footer:hover{
+
+.footer:hover {
     font-size: 32px;
     color: blue;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .content, .content2, .content4, .content5 {
+        flex-direction: column;
+    }
+
+    .content img, .content2 video, .content4 img, .content5 img {
+        width: 100%;
+        margin: 16px 0;
+    }
+
+    .text h2, .content2_body h2, .content4_body h2, .content5_body h2 {
+        font-size: 24px;
+    }
+
+    .text p, .content2_body p, .content4_body p, .content5_body p {
+        font-size: 12px;
+    }
+
+    .footer {
+        font-size: 10px;
+    }
+
+    .footer:hover {
+        font-size: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+    .content, .content2, .content4, .content5 {
+        flex-direction: column;
+    }
+
+    .content img, .content2 video, .content4 img, .content5 img {
+        width: 100%;
+        margin: 16px 0;
+    }
+
+    .text h2, .content2_body h2, .content4_body h2, .content5_body h2 {
+        font-size: 20px;
+    }
+
+    .text p, .content2_body p, .content4_body p, .content5_body p {
+        font-size: 12px;
+    }
+
+    .footer {
+        font-size: 8px;
+    }
+
+    .footer:hover {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    .content, .content2, .content4, .content5 {
+        flex-direction: column;
+    }
+
+    .content img, .content2 video, .content4 img, .content5 img {
+        width: 100%;
+        margin: 16px 0;
+    }
+
+    .text h2, .content2_body h2, .content4_body h2, .content5_body h2 {
+        font-size: 18px;
+    }
+
+    .text p, .content2_body p, .content4_body p, .content5_body p {
+        font-size: 10px;
+    }
+
+    .footer {
+        font-size: 6px;
+    }
+
+    .footer:hover {
+        font-size: 12px;
+    }
 }
